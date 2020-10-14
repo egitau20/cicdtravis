@@ -7,7 +7,17 @@ node_js:
 cache: npm
 
 # Travis lifecycle methods
+before_install:
+  - echo "before_install"
 install:
-  - npm install
+  - echo "install"
+before_script:
+  - echo "before_script"
 script:
-  - npm run test
+  - echo "script"
+after_success:
+  - echo "after_success"
+after_failure:
+  - echo "after_failure"
+after_script:
+  - echo "after_script"
