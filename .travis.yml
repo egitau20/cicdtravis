@@ -16,7 +16,7 @@ before_script:
 script:
   - echo "script"
 after_success:
-  - echo "after_success"
+  - echo "after_successs"
 after_failure:
   - echo "after_failure"
 after_script:
